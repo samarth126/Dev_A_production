@@ -12,3 +12,6 @@ def main_admin(request):
 
 def form_admin(request):
     return render(request, 'admin_site/forms-advanced-form.html')
+
+def business_unit(request):
+    return render(request, 'main_site/business_unit.html')

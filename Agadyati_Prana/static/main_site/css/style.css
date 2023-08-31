@@ -1700,10 +1700,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
       display: block;
       letter-spacing: 2px;
       margin-bottom: 10px; }
-    .hero-wrap .slider-text h1, .hero-wrap .slider-text .h1 {
-      font-weight: 400;
+    .hero-wrap .slider-text h3, .hero-wrap .slider-text .h3 {
+     
       color: #fff;
-      font-size: 60px;
+      font-size: 40px;
       line-height: 1.2; }
       .hero-wrap .slider-text h1 span, .hero-wrap .slider-text .h1 span {
         color: #36c940; }
