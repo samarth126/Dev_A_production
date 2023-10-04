@@ -9,14 +9,14 @@
 
 
 
-  <section class="hero-wrap" style="background-image: url('{% static 'main_site/images/landing.jpg' %}');">
+  <section class="hero-wrap" style="background-image: url('{% static 'main_site/images/landing.png' %}');">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-center">
         <div class="col-lg-6">
           <img style="  max-width: 150px; height: auto ;"class="img-fluid"src="{% static 'main_site/images/ag_logo.png' %}">
           <!-- <span class="subheading">Finding Balance In Food, Health and Wellness</span> -->
-          <h3 class="mb-4">Enhancing Lifestyle, Wellness & Spirituality</h3>
+          <h2 style="color: white;" class="mb-9">Enhancing Lifestyle, Wellness & Spirituality</h2>
           <p><a href="#" class="btn btn-primary p-4 py-3">Contact us <span
                 class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white p-4 py-3">Learn More
               <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -30,6 +30,7 @@
         <div class="col-md-12">
           <div class="row g-lg-1">
             <div class="col-md d-flex align-items-stretch">
+              <a href="{% url 'offering' %}">
               <div class="services text-center">
                 <div class="icon"><span class="flaticon-plan"></span></div>
                 <div class="text">
@@ -37,6 +38,7 @@
                   <p>Far far away, behind the word mountains, far from the countries.</p>
                 </div>
               </div>
+              </a>
             </div>
             <div class="col-md d-flex align-items-stretch">
               <div class="services text-center">
@@ -255,7 +257,7 @@
       </div>
     </div>
   </section>
-  <section class="ftco-intro img" style="background-image: url({% static 'main_site/images/bg_6.jpg' %});">
+  <section class="ftco-intro img" style="background-image: url({% static 'main_site/images/paralax.jpg' %});">
     <div class="overlay"></div>
     <div class="container-xl">
       <div class="row justify-content-center">
@@ -268,7 +270,7 @@
               </div>
             </div>
             <div class="col-md-4 d-flex align-items-center">
-              <p class="mb-0"><a href="#" class="btn btn-primary py-md-4 py-3 px-md-5 px-4">Make An Appointment</a></p>
+              <p class="mb-0"><a href="{% url 'booking' %}" class="btn btn-primary py-md-4 py-3 px-md-5 px-4">Make An Appointment</a></p>
             </div>
           </div>
         </div>
@@ -554,7 +556,7 @@
         <div class="col-md-6 d-flex align-items-center">
           <form action="#" class="appointment" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <span class="subheading">Drop A Message</span>
-            <h2 class="mb-4 appointment-head">Make An Appointment</h2>
+            <h2 class="mb-4 appointment-head"></h2>
             <div class="row">
               <div class="col-md-12 col-lg-6">
                 <div class="form-group">

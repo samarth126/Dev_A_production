@@ -1,0 +1,111 @@
+{% extends 'main_site/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<div style="z-index: 2; height: 60vh;" id="carouselExampleSlidesOnly" class="hero-wrap carousel slide"
+    data-ride="carousel">
+    <div class="carousel-inner ">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'main_site/images/bg3.png' %}" alt="First slide">
+        <div style="z-index: 2;" class="carousel-caption">
+            <h1 style="margin-top: 10px; color: yellowgreen; font-weight: bold; text-align: center; padding-top: 0%;">Pranic Healing</h1>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<section style="margin-bottom: none; padding-bottom: 3px; " class="">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-md-8 heading-section text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <span class="subheading"></span>
+                <!-- <h2 class="mb-4">Agadyati Prana Retreats</h2> -->
+            
+            </div>
+        </div>
+        <div class="row">
+        <section style="padding-top: 0px;" class="ftco-section ftco-about-section">
+            <div class="container-xl">
+                <div class="row g-xl-5">
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
+                        data-aos-duration="1000">
+                        <div class="img w-100 section-counter"
+                            style="background-image: url({% static 'main_site/images/pranic.jpg' %});">
+                            <div class="counter-wrap d-flex">
+                                <div class="icon"><span class="flaticon-diet"></span></div>
+                                <div class="text ps-3">
+                                    <span class="number"><span class="countup">10+</span></span>
+                                    <span class="caption">Years of experienced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 heading-section d-flex align-items-center" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-duration="1000">
+                        <div class="mt-5 mt-md-0">
+                            <!-- <span class="subheading">About Us</span> -->
+                            <h3 class="mb-2">About Pranic Healing</h3>
+                            <!-- <h3 class="mb-4">If You Get A Better Nutrition, You Can Enjoy A Healthy Age</h3> -->
+                            <p class="mb-4">iA new age life coach, an entrepreneur and a true guiding friend who is determined
+                                to achieve her mission of spreading
+                                positivity via manifesting energy and guidance for one to attain higher inner self.
+        
+                                Shradha has a 10+ years of experience as a Pranic healer and Tarot reader, she has by now
+                                conducted 50,000+ successful
+                                sessions. Her patients who range from all aspects of life and age group see towards her as
+                                guiding light in all their
+                                life problems be it mental, physical and emotional.</h4>
+                            <div class="d-md-flex">
+                                <ul>
+                                    <li><span class="ion-ios-checkmark-circle"></span>100,000
+                                        Number of sessions</li>
+                                    <li><span class="ion-ios-checkmark-circle"></span>10,000
+                                        People Benefited</li>
+                                    <li><span class="ion-ios-checkmark-circle"></span>5,000
+                                        Continuous Improvements</li>
+                                    <li><span class="ion-ios-checkmark-circle"></span>10,000
+                                        Totally Healed</li>
+                                </ul>
+                                <!-- <ul>
+                        <li><span class="ion-ios-checkmark-circle"></span>Balance Body & Mind</li>
+                        <li><span class="ion-ios-checkmark-circle"></span>Advice</li>
+                        <li><span class="ion-ios-checkmark-circle"></span>Workout Routines</li>
+                        <li><span class="ion-ios-checkmark-circle"></span>Protein</li>
+                      </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+<section class="ftco-intro img" style="background-image: url({% static 'main_site/images/paralax.jpg' %});">
+    <div class="overlay"></div>
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div>
+                            <span class="subheading">Finding Balance in Food, Health and Wellness</span>
+                            <h1 class="mb-md-0 mb-4">Change Is Inevitable, Be A Part Of This Change</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <p class="mb-0"><a href="{% url 'booking' %}"
+                                class="btn btn-primary py-md-4 py-3 px-md-5 px-4">Make An Appointment</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,120 @@
+{% extends 'main_site/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="ftco-appointment ftco-section bg-darken" >
+    <div class="overlay"></div>
+    <div class="container-xl">
+        <div class="row g-lg-5">
+          
+            <div class="col-md-12 d-flex align-items-center">
+                <form action="#" class="appointment" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <span class="subheading"></span>
+                    <h2 class="mb-4 appointment-head">Book Sessions</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="Lname">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="name">Phone</label>
+                                <input type="text" class="form-control" placeholder="Contact No">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="name">Gender</label>
+                                <input type="text" class="form-control" placeholder="Gender">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="email">country</label>
+                                <input type="text" class="form-control" placeholder="Your Country">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="subject">Select Course/Service</label>
+                                <div class="form-field">
+                                    <div class="select-wrap">
+                                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                        <select name id class="form-control">
+                                            <option value>Pranic Healing</option>
+                                            <option value>Meditation</option>
+                                            <option value>Yoga</option>
+                                            <option value>Nutrition</option>
+                                            <option value>Tarot Readings</option>
+                                            
+                                            <option value>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="subject">No of sessions</label>
+                                <div class="form-field">
+                                    <div class="select-wrap">
+                                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                        <select name id class="form-control">
+                                            <option value>1</option>
+                                            <option value>2</option>
+                                            <option value>3</option>
+                                            <option value>4</option>
+                                            <option value>5</option>
+                        
+                                            <option value>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <div class=''>
+                                    <input type='text' readonly="true" value="5000" class="form-control" id='datetimepicker4' />
+                                </div>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        
+                                        $('#datetimepicker4').datetimepicker();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea name id cols="30" rows="7" class="form-control"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" value="Proceed to Payment" class="btn btn-primary py-3 px-4 rounded">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
